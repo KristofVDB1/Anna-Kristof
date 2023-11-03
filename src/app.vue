@@ -1,7 +1,6 @@
 <template>
   <Head>
     <Title>{{ config.title }}</Title>
-    <Link rel="icon" href="/icon.png" type="image/png" />
     <Meta name="description" :content="config.description" />
   </Head>
   <main
