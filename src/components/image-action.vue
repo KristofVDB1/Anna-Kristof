@@ -6,7 +6,7 @@
     @click="handleClick"
   >
     <div
-      class="p-2 rounded-full duration-200 bg-gray-800 bg-opacity-80 backdrop-blur-sm hover:bg-gray-700 focus:bg-gray-700 outline-gray-100 outline-2 text-white"
+      class="p-2 rounded-fullbg-gray-800 bg-opacity-80 backdrop-blur-sm hover:bg-gray-700 focus:bg-gray-700 outline-gray-100 outline-2 text-white"
     >
       <PhDownloadSimple v-if="action === 'download'" :size="18" />
       <PhArrowUpRight v-if="action === 'source'" :size="18" />

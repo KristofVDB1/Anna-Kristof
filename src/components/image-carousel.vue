@@ -5,7 +5,7 @@
     class="fixed inset-x-0 bottom-0 overflow-hidden bg-gradient-to-b from-black/0 to-black/60"
   >
     <div
-      :class="`mx-auto mt-12 mb-12 inline-flex ml-[50%] will-change-auto ${
+      :class="`mx-auto mt-6 mb-6 inline-flex ml-[50%] will-change-auto ${
         transitionEnabled ? 'duration-200' : ''
       }`"
       :style="translateStyle"
@@ -17,9 +17,9 @@
         aria-label="go to image"
         :class="`${
           i.idx === currentImage.idx
-            ? 'brightness-125 scale-125 z-30 rounded-lg'
+            ? 'brightness-125 scale-125 z-30'
             : 'brightness-50'
-        } overflow-hidden hover:brightness-110 focus:brightness-110 duration-200 will-change-auto w-24 border-none outline-none bg-transparent`"
+        } overflow-hidden hover:brightness-110 focus:brightness-110 will-change-auto w-24 border-none outline-none bg-transparent`"
         @click="handleClick(i)"
       >
         <NuxtImg

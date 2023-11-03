@@ -13,7 +13,7 @@
         >
           <a
             :href="href"
-            class="after:content group relative mb-5 block w-full cursor-zoom-in after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight"
+            class="after:content group relative mb-5 block w-full cursor after:pointer-events-none after:absolute after:inset-0 after:rounded-lg after:shadow-highlight"
             @click="(e) => onClick(e, image)"
           >
             <NuxtImg
@@ -21,7 +21,7 @@
               :src="image.filename"
               :width="10"
               :quality="1"
-              class="w-full h-full rounded-lg object-cover blur-lg saturate-[2] absolute inset-0"
+              class="w-full h-full object-cover blur-lg saturate-[2] absolute inset-0"
               alt=""
               :loading="'lazy'"
             />
@@ -36,7 +36,7 @@
               format="webp"
               :src="image.filename"
               :alt="image.alt"
-              class="w-full h-full rounded-lg object-cover relative z-10 text-[0px] duration-200"
+              class="w-full h-full object-cover relative z-10 text-[0px] duration-200"
               :style="{ aspectRatio: image.aspectRatio }"
             />
             <span class="sr-only">{{ image.alt }}</span>
