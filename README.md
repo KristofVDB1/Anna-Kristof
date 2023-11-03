@@ -1,22 +1,3 @@
-# Gallery - an image gallery made with Nuxt 3
-
-[![gallery preview](https://github.com/avocadace/gallery/assets/47639656/fbcfe88d-8445-4796-9010-f882f52869ab)](https://gallery-nuxt.netlify.app/)
-
-## :sparkles: Features
-
-All your images are automatically imported from the `images` folder.
-
--   Self-hosted (just copy your images to `images`) 🧑‍💻️
--   Can be hosted on any static site hosting with Nuxt generate 📄
--   Arrow key / mouse / touch navigation ➡️
--   Search based on filename or description text 🔍 - <kbd>Ctrl</kbd> or <kbd>⌘</kbd> + <kbd>k</kbd> to open when enabled.
--   Image support includes `.webp` `.jpg` `.png` `.avif` `.gif` 📸
--   Support of different aspect ratios
--   Image optimisation, provided by [@nuxt/image](https://github.com/nuxt/image)
--   Tailwind CSS for styling 🎨
--   ESLint + Prettier for code format and styling
--   Vitest + Vue test utils + Nuxt Devtools + Playwright for tests
-
 ## :rocket: Quick Start
 
 These instructions will help you set up a deployment as fast as possible.
@@ -28,20 +9,17 @@ It is assumed that you have Node 16+ and pnpm installed.
 
 3. Edit the configuration in [`gallery.config.ts`](/gallery.config.ts)
 
-4. Build Nuxt in static mode with `pnpm generate`.
+4. Build Nuxt in static mode with `npm run generate`.
 
 5. Deploy the static build on hosting of your choosing. 
-Netlify is used for the demo and they make it easy to deploy with their [CLI](https://docs.netlify.com/cli/get-started/) or alternatively,
 there are Github Actions available to build & deploy to Netlify.
 
 ## :computer: Local Development
 
-_Note_ this project uses `pnpm` as the package manager. Replace with `npm run` or `yarn` if needed.
-
 Get started
 
 ```
-git clone https://github.com/avocadace/gallery.git
+git clone https://github.com/KristofVDB1/Anna-Kristof.git
 ```
 
 ```
@@ -49,13 +27,13 @@ cd gallery
 ```
 
 ```
-pnpm install
+npm install
 ```
 
 Development mode
 
 ```
-pnpm dev
+npm run dev
 ```
 
 ## Important directories
@@ -66,20 +44,6 @@ pnpm dev
     -   `src/composables`
     -   `src/pages`
     -   `src/types`
--   `test`
-    -   `test/e2e` stores all Playwright E2E tests
-
-## Running the tests
-
-Vitest + Playwright
-
-Unit tests:
-
-`pnpm test:unit`
-
-E2E tests (this may require other Playwright dependencies to be installed):
-
-`pnpm test:e2e`
 
 ## Commands Index:
 
