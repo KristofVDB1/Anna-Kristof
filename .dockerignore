@@ -5,10 +5,11 @@ node_modules
 .cache
 .output
 .env
+.env.example
 dist
 coverage
 drafts
 .netlify
 auto-imports.d.ts
 .env.example
-.vercel
+test
