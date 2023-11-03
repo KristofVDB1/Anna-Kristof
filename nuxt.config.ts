@@ -7,6 +7,10 @@ images = images.map((image) => image.replace("./images/", ""));
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/Anna-Kristof/',
+    buildAssetsDir: 'assets'
+  },
   srcDir: "src",
   alias: {
     "@/": "/src/",
@@ -50,7 +54,7 @@ export default defineNuxtConfig({
     //supported provider is ipx
     provider: "ipx",
     screens: {
-      xs: undefined,
+      xs: 320,
       sm: 640,
       md: 768,
       lg: 1024,
