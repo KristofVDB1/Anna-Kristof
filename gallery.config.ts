@@ -2,11 +2,7 @@ const config: GalleryOptions = {
     title: "Gallery",
     description: "An image gallery built with Nuxt 3",
     htmlLang: "en",
-    baseURL: "https://gallery-nuxt.netlify.app", //without trailing slash, used for metadata giving previews in social media
-    // altTextGenerator: (filename: string) => { //optional way to generate alt text from filename
-    //     //might have a json file with mappings of filename to alt text
-    //     return jsonFileData[filename];
-    // },
+    baseURL: "https://kristofvdb1.github.io/Anna-Kristof/", //without trailing slash, used for metadata giving previews in social media
     search: {
         //if not defined search is disabled
         //uses alt text
