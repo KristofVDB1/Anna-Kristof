@@ -19,16 +19,16 @@
             <NuxtImg
               format="webp"
               :src="image.filename"
-              :width="10"
+              :width="1"
               :quality="1"
               class="w-full h-full object-cover blur-lg saturate-[2] absolute inset-0"
               alt=""
-              :loading="'lazy'"
+              loading="lazy"
             />
             <NuxtImg
               :id="image.idx"
-              :width="720"
-              :quality="75"
+              :width="480"
+              :quality="1"
               :placeholder="
                 img(image.filename, { h: 10, f: 'jpg', blur: 2, q: 35 })
               "
