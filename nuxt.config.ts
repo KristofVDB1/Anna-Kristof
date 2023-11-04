@@ -8,8 +8,8 @@ images = images.map((image) => image.replace("./images/", ""));
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    baseURL: '/Anna-Kristof/',
-    buildAssetsDir: 'assets'
+    baseURL: "/Anna-Kristof/",
+    buildAssetsDir: "assets",
   },
   srcDir: "src",
   alias: {
