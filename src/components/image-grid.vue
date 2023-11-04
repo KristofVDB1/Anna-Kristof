@@ -28,7 +28,7 @@
             <NuxtImg
               :id="image.idx"
               :width="480"
-              :quality="1"
+              :quality="2"
               :placeholder="
                 img(image.filename, { h: 10, f: 'jpg', blur: 2, q: 35 })
               "
