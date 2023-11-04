@@ -2,11 +2,11 @@
   <div
     v-if="currentImage"
     ref="swiperRef"
-    class="relative max-h-[45vh] md:max-h-[75vh] xl:max-h-[85vh] h-full overflow-hidden aspect-auto max-w-7xl cursor-default w-full flex items-center justify-center"
+    class="relative max-h-[45vh] md:max-h-[65vh] xl:max-h-[75vh] h-full overflow-hidden aspect-auto max-w-7xl cursor-default w-full flex items-center justify-center no-close"
   >
     <div
       v-if="loaded"
-      class="absolute top-0 left-0 w-full inline-flex justify-between p-4 z-[99999999]"
+      class="absolute top-0 left-0 w-full inline-flex justify-between p-4 pb-8 z-10 no-close"
     >
       <ImageAction action="close" :image="currentImage" />
       <div class="inline-flex gap-4">
@@ -17,7 +17,7 @@
     <div
       :key="currentImage.idx"
       ref="imageElement"
-      class="absolute inset-0 w-full flex flex-col items-center justify-center"
+      class="absolute inset-0 w-full flex flex-col items-center justify-center no-close"
     >
       <NuxtImg
         v-show="loaded"
@@ -33,7 +33,7 @@
         :quality="50"
         format="webp"
         :src="currentImage.filename"
-        class="brightness-110 pointer-events-none w-auto h-auto max-h-[45vh] md:max-h-[75vh] xl:max-h-[85vh] xl:w-auto xl:h-full text-transparent image-gallery__image"
+        class="brightness-110 pointer-events-none w-auto h-auto max-h-[45vh] md:max-h-[65vh] xl:max-h-[75vh] xl:w-auto xl:h-full text-transparent image-gallery__image"
         :style="{ aspectratio: currentImage.aspectRatio }"
         fetchpriority="high"
         decoding="async"
