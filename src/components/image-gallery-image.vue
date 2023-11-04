@@ -6,7 +6,7 @@
   >
     <div
       v-if="loaded"
-      class="absolute top-0 left-0 w-full inline-flex justify-between p-4 pb-8 z-10 no-close"
+      class="absolute top-0 left-0 w-full inline-flex justify-between p-4 pb-8 z-40 no-close"
     >
       <ImageAction action="close" :image="currentImage" />
       <div class="inline-flex gap-4">
@@ -145,7 +145,9 @@ const pointerSwipe = usePointerSwipe(swiperRef, {
 
 useSwipe(swiperRef, {
   onSwipe: async (direction) => {
-    await navigate(direction);
+    if (pointerSwipe?.direction?.value !== "NONE") {
+      await navigate(direction);
+    }
   },
 });
 
